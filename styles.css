@@ -1,0 +1,105 @@
+body{
+  background-color: hsl(0, 0%, 95%);
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  justify-content: center;
+  height: 100vh;
+  font-family: 'Lexend Deca', sans-serif;
+  color:hsl(0, 0%, 95%);
+  font-size: 15px;
+}
+
+h1{
+  font-family: 'Big Shoulders Display', cursive;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+p{
+  padding-bottom: 45px;
+  font-weight: 400;
+  color:hsla(0, 0%, 100%, 0.75);
+  line-height: 20px;
+}
+
+button{
+  border:0px;
+  background:hsl(0, 0%, 95%);
+  border-radius: 50px;
+  padding:10px 25px;
+  font-weight: 700;
+}
+
+/*Card Container*/
+
+#CardContainer{
+  display: flex;
+  flex-direction: row;
+  width:830px;
+  height:450px;
+  border-radius: 10px;
+  overflow:hidden;
+  align-items:center;
+  justify-content: center;
+
+}
+
+#SedanCard,#SuvCard,#LuxuryCard{
+  height: 100%;
+}
+
+#SedanCard{
+  background:hsl(31, 77%, 52%);
+}
+
+#SuvCard{
+  background:hsl(184, 100%, 22%);
+}
+
+#LuxuryCard{
+  background:hsl(179, 100%, 13%);
+}
+
+/*Container styles */
+
+#SedanContainer,#SuvContainer,#LuxuryContainer{
+margin:44px;
+padding:8px;
+}
+
+#SedanContainer button{
+color:hsl(31, 77%, 52%);
+}
+
+#SuvContainer button{
+color:hsl(184, 100%, 22%);
+}
+
+#LuxuryContainer button{
+color:hsl(179, 100%, 13%);
+}
+
+/* Button Hover State */
+button:hover{
+  border:2px solid hsl(0, 0%, 95%);
+  background:transparent;
+  color:hsl(0, 0%, 95%)!important;
+  cursor: pointer;
+}
+
+/* Mobile Styles */
+@media only screen and (max-width: 480px) {
+
+  body{
+    height: 100%;
+  }
+
+  #CardContainer{
+    flex-direction: column;
+    width:328px;
+    height: 100%;
+    margin:40px 0 40px 0;
+    border-radius: 10px;
+  }
+}
